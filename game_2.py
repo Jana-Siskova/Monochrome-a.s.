@@ -110,12 +110,7 @@ class my_window(QMainWindow):
             def card_place_text(number_place, place_combinations):
                 return place_combinations.get(number_place, "Neplatná kombinace karty a místa.")
             text = card_place_text(input, source)
-            self.text_label.setPlainText(text)
-            
-        self.update()
-    
-    def update(self):
-        self.welcome_label.adjustSize()
+            self.text_label.setPlainText(text)        
 
 def window():
     app = QApplication(sys.argv)
